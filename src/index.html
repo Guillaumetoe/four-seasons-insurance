@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Four Seasons Insurance offre des solutions d'assurance personnalisées pour protéger vos biens, votre santé et vos projets professionnels en Côte d'Ivoire."
+    />
+    <meta
+      name="keywords"
+      content="assurance, automobile, santé, voyage, habitation, vie, activité professionnelle, Côte d'Ivoire"
+    />
+    <meta name="author" content="Four Seasons Insurance" />
+    <link rel="icon" href="../Images/LOGO FSI-07.png" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Four Seasons Insurance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .carousel-item {
+        min-width: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Réutiliser le header existant -->
+      <div class="bg-gray-200 py-2">
+        <div
+          class="max-w-screen-lg mx-auto flex flex-col md:flex-row md:justify-between md:items-center px-4 md:px-0"
+        >
+          <div
+            class="text-couleur3 flex flex-col md:flex-row md:gap-5 items-center md:items-start"
+          >
+            <a href="" class="mb-2 md:mb-0">info@fourseasonsinsurance.com</a>
+            <span class="flex items-center">
+              <i class="fas fa-phone mr-2"></i>
+              <span>07 49 09 30 10 - 05 00 94 57 58</span>
+            </span>
+          </div>
+
+          <!-- reseaux sociaux -->
+          <div class="flex justify-center gap-4 mt-4 md:mt-0">
+            <a
+              href="https://www.facebook.com/profile.php?id=100091275175422"
+              target="_blank"
+              class="text-couleur3 hover:text-vertDeux"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://wa.me/message/AOZQLRXLGIUEI1"
+              target="_blank"
+              class="text-couleur3 hover:text-vertDeux"
+            >
+              <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu navigation -->
+      <nav class="bg-gray-100 py-2">
+        <div
+          class="max-w-screen-lg mx-auto px-4 md:px-0 flex items-center justify-between"
+        >
+          <div>
+            <a href="index.html">
+              <img
+                src="../Images/LOGO FSI-07.png"
+                alt="Logo Four Seasons Insurance"
+                class="w-28"
+              />
+            </a>
+          </div>
+          <div class="md:hidden">
+            <!-- Bouton du menu hamburger -->
+            <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex md:items-center">
+            <ul class="flex gap-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="a-propos.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Services.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Nos services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Contact.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <ul class="flex flex-col items-center mt-4">
+            <li>
+              <a
+                href="index.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="a-propos.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="Services.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Nos services</a
+              >
+            </li>
+            <li>
+              <a
+                href="Contact.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="relative overflow-hidden">
+        <div class="carousel flex">
+          <div class="carousel-item relative">
+            <img
+              src="../Images/ASSURANCE-AUTO.jpg"
+              alt="Assurance Automobile"
+              class="w-full h-full md:h-screen object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-white opacity-70"
+            ></div>
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+            >
+              <h1 class="text-3xl md:text-6xl font-bold mb-4">
+                Bienvenue chez Four Seasons Insurance
+              </h1>
+              <p class="text-xl md:text-4xl">
+                Protégez votre véhicule et conduisez en toute sérénité
+              </p>
+              <div
+                class="flex flex-col md:flex-row gap-4 md:gap-20 justify-center items-center py-8 md:py-16"
+              >
+                <div>
+                  <a
+                    href="Formulaire-devis-automobile.html"
+                    class="bg-green-700 px-4 py-2 md:px-4 md:py-4 rounded-lg hover:bg-green-800 transition duration-1000 text-white font-semibold"
+                    >Devis Assurance Automobile et Moto</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="Formulaire-devis-sante.html"
+                    class="bg-purple-700 px-4 py-2 md:px-4 md:py-4 rounded-lg hover:bg-purple-800 transition duration-1000 text-white font-semibold"
+                    >Devis Assurance Santé</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item relative">
+            <img
+              src="../Images/FSI-ASSURANCE-SANTE.jpg"
+              alt="Assurance Santé"
+              class="w-full h-full md:h-screen object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-white opacity-70"
+            ></div>
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+            >
+              <h1 class="text-3xl md:text-6xl font-bold mb-4">
+                Bienvenue chez Four Seasons Insurance
+              </h1>
+              <p class="text-xl md:text-4xl">
+                Prenez soin de votre santé avec nos solutions adaptées
+              </p>
+              <div
+                class="flex flex-col md:flex-row gap-4 md:gap-20 justify-center items-center py-8 md:py-16"
+              >
+                <div>
+                  <a
+                    href="Formulaire-devis-automobile.html"
+                    class="bg-green-700 px-4 py-2 md:px-4 md:py-4 rounded-lg hover:bg-green-800 transition duration-1000 text-white font-semibold"
+                    >Devis Assurance Automobile et Moto</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="Formulaire-devis-sante.html"
+                    class="bg-purple-700 px-4 py-2 md:px-4 md:py-4 rounded-lg hover:bg-purple-800 transition duration-1000 text-white font-semibold"
+                    >Devis Assurance Santé</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item relative">
+            <img
+              src="../Images/FSI-ASSURANEC-VOYAGE.webp"
+              alt="Assurance Voyage"
+              class="w-full h-full md:h-screen object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-white opacity-70"
+            ></div>
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+            >
+              <h1 class="text-3xl md:text-6xl font-bold mb-4">
+                Bienvenue chez Four Seasons Insurance
+              </h1>
+              <p class="text-xl md:text-4xl">
+                Voyagez l'esprit tranquille avec nos couvertures complètes
+              </p>
+              <div
+                class="flex flex-col md:flex-row gap-4 md:gap-20 justify-center items-center py-8 md:py-16"
+              >
+                <div>
+                  <a
+                    href="Formulaire-devis-automobile.html"
+                    class="bg-green-700 px-4 py-2 md:px-4 md:py-4 rounded-lg hover:bg-green-800 transition duration-1000 text-white font-semibold"
+                    >Devis Assurance Automobile et Moto</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="Formulaire-devis-sante.html"
+                    class="bg-purple-700 px-4 py-2 md:px-4 md:py-4 rounded-lg hover:bg-purple-800 transition duration-1000 text-white font-semibold"
+                    >Devis Assurance Santé</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+          onclick="prevSlide()"
+        >
+          &#10094;
+        </button>
+        <button
+          class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+          onclick="nextSlide()"
+        >
+          &#10095;
+        </button>
+      </div>
+      <div class="w-full bg-couleur3 py-6 mx-auto text-center">
+        <a
+          href="../Images/tarif-prix.PDF"
+          class="text-white text-2xl font-bold font-sans"
+          >Télécharger le barème des prix - assurance santé</a
+        >
+      </div>
+
+      <!-- section about -->
+      <div class="w-[80%] mx-auto">
+        <div class="py-10 text-center">
+          <h3
+            class="text-3xl md:text-4xl lg:text-5xl font-semibold text-couleur3 font-sans"
+          >
+            LE FUTUR DE L'ASSURANCE EN CÔTE D'IVOIRE
+          </h3>
+          <p class="text-base md:text-lg lg:text-xl">
+            Adhérez ou renouvelez vos assurances facilement en quelques clics,
+            partout en Côte d'Ivoire
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center mx-auto py-10 md:py-16 lg:py-20 gap-4 md:gap-8 lg:gap-12"
+        >
+          <div class="flex-shrink-0 md:mr-8">
+            <img
+              src="../Images/particulier-2.png"
+              alt="Image d'un particulier"
+              class="w-full md:w-[300px] rounded-lg"
+            />
+          </div>
+          <div>
+            <h3
+              class="text-3xl md:text-4xl lg:text-5xl font-semibold text-couleur3 mb-4"
+            >
+              A propos de Nous
+            </h3>
+            <p class="text-base md:text-lg lg:text-xl text-justify">
+              En tant que courtiers en assurances dédiés aux professionnels et
+              aux particuliers, nous nous engageons à vous accompagner avec
+              expertise et dévouement. Notre mission est de vous conseiller et
+              de créer des programmes d’assurance personnalisés qui répondent
+              parfaitement à vos besoins spécifiques. Grâce à nos services et
+              solutions d’assurance, vous pourrez saisir les opportunités qui se
+              présentent à vous, développer vos projets sans inquiétude et
+              entreprendre en toute confiance. Nous sommes là pour vous offrir
+              la tranquillité d'esprit nécessaire pour avancer sereinement dans
+              tous vos projets.
+            </p>
+            <a
+              href="a-propos.html"
+              class="bg-vertForet text-white py-2 px-4 rounded-md inline-block mt-4 md:mt-6 lg:mt-8"
+              >Savoir plus</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Nos services -->
+      <div class="bg-gray-100 py-10">
+        <div class="w-[80%] mx-auto text-center">
+          <h3 class="text-4xl font-semibold text-couleur3 mb-6">
+            Nos Services
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Assurance Santé -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-stethoscope text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Assurance Santé
+              </h4>
+              <p class="text-gray-700">
+                Protégez votre santé et celle de votre famille avec nos plans
+                d'assurance santé complets et personnalisés.
+              </p>
+            </div>
+            <!-- Assurance Voyage -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-plane text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Assurance Voyage
+              </h4>
+              <p class="text-gray-700">
+                Voyagez en toute tranquillité avec nos assurances voyage qui
+                couvrent tous les imprévus à l'étranger.
+              </p>
+            </div>
+            <!-- Assurance Automobile et Moto -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-car text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Assurance Automobile et Moto
+              </h4>
+              <p class="text-gray-700">
+                Protégez vos véhicules avec nos assurances complètes pour
+                voitures et motos, adaptées à vos besoins.
+              </p>
+            </div>
+            <!-- Assurance Habitation -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-home text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Assurance Habitation
+              </h4>
+              <p class="text-gray-700">
+                Assurez votre maison et vos biens avec nos solutions d'assurance
+                habitation robustes et fiables.
+              </p>
+            </div>
+            <!-- Assurance Vie -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-heart text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Assurance Vie
+              </h4>
+              <p class="text-gray-700">
+                Préparez l'avenir de vos proches avec nos assurances vie,
+                offrant sécurité et sérénité pour l'avenir.
+              </p>
+            </div>
+            <!-- Assurance Activité Professionnelle -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-briefcase text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Assurance Activité Professionnelle
+              </h4>
+              <p class="text-gray-700">
+                Protégez votre entreprise et vos activités professionnelles avec
+                nos solutions d'assurance adaptées aux professionnels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-10">
+        <div class="w-[80%] mx-auto text-center">
+          <h3 class="text-4xl font-semibold text-couleur3 mb-6">
+            Pourquoi Nous Choisir
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Expertise -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-user-tie text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Expertise
+              </h4>
+              <p class="text-gray-700">
+                Notre équipe de courtiers expérimentés vous offre des conseils
+                personnalisés et des solutions adaptées à vos besoins.
+              </p>
+            </div>
+            <!-- Service Client -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-headset text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Service Client
+              </h4>
+              <p class="text-gray-700">
+                Nous sommes disponibles 24/7 pour répondre à vos questions et
+                vous assister en cas de besoin.
+              </p>
+            </div>
+            <!-- Prix Compétitifs -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-dollar-sign text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Prix Compétitifs
+              </h4>
+              <p class="text-gray-700">
+                Nous proposons des tarifs compétitifs pour toutes nos solutions
+                d'assurance sans compromettre la qualité du service.
+              </p>
+            </div>
+            <!-- Solutions Personnalisées -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-cogs text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Solutions Personnalisées
+              </h4>
+              <p class="text-gray-700">
+                Nous créons des programmes d'assurance sur mesure qui répondent
+                parfaitement à vos besoins spécifiques.
+              </p>
+            </div>
+            <!-- Fiabilité -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-shield-alt text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Fiabilité
+              </h4>
+              <p class="text-gray-700">
+                Nous nous engageons à être votre partenaire de confiance,
+                toujours à vos côtés pour vous protéger.
+              </p>
+            </div>
+            <!-- Innovation -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <i class="fas fa-lightbulb text-5xl text-vertForet mb-4"></i>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Innovation
+              </h4>
+              <p class="text-gray-700">
+                Nous utilisons les dernières technologies pour simplifier le
+                processus de souscription et de gestion de vos assurances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-10">
+        <div class="w-[80%] mx-auto text-center">
+          <h3 class="text-4xl font-semibold text-couleur3 mb-6">
+            Comment ça marche ?
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Étape 1 -->
+            <div class="text-center">
+              <div
+                class="flex items-center justify-center bg-vertForet text-white rounded-full w-20 h-20 mx-auto mb-4"
+              >
+                <span class="text-3xl font-bold">1</span>
+              </div>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Choisissez une Assurance
+              </h4>
+              <p class="text-gray-700">
+                Parcourez notre gamme complète de services et choisissez
+                l'assurance qui correspond le mieux à vos besoins.
+              </p>
+            </div>
+            <!-- Étape 2 -->
+            <div class="text-center">
+              <div
+                class="flex items-center justify-center bg-vertForet text-white rounded-full w-20 h-20 mx-auto mb-4"
+              >
+                <span class="text-3xl font-bold">2</span>
+              </div>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Remplissez le Formulaire
+              </h4>
+              <p class="text-gray-700">
+                Complétez notre formulaire en ligne avec vos informations
+                personnelles et les détails nécessaires pour la souscription.
+              </p>
+            </div>
+            <!-- Étape 3 -->
+            <div class="text-center">
+              <div
+                class="flex items-center justify-center bg-vertForet text-white rounded-full w-20 h-20 mx-auto mb-4"
+              >
+                <span class="text-3xl font-bold">3</span>
+              </div>
+              <h4 class="text-2xl font-semibold text-couleur3 mb-2">
+                Profitez de votre Assurance
+              </h4>
+              <p class="text-gray-700">
+                Une fois votre souscription validée, bénéficiez de la protection
+                de votre nouvelle assurance en toute sérénité.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-200 text-couleur3 py-10">
+      <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- À propos -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">À propos de nous</h4>
+          <p class="text-gray-800">
+            Four Seasons Insurance est une entreprise de courtage en assurance
+            dédiée à offrir des solutions personnalisées pour protéger vos
+            biens, votre santé, et vos projets professionnels.
+          </p>
+          <img
+            src="../Images/LOGO FSI-07.png"
+            alt="Logo Four Seasons Insurance"
+            class="w-32 mt-4"
+          />
+        </div>
+        <!-- Liens rapides -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Liens rapides</h4>
+          <ul class="text-gray-800">
+            <li class="mb-2">
+              <a href="#Accueil" class="hover:text-vertForet font-semibold"
+                >Accueil</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="a-propos.html" class="hover:text-vertForet font-semibold"
+                >À propos</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="Services.html" class="hover:text-vertForet font-semibold"
+                >Nos services</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="Contact.html" class="hover:text-vertForet font-semibold"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact</h4>
+          <p class="text-gray-800 mb-2">
+            <i class="fas fa-phone mr-2"></i> 07 49 09 30 10 - 05 00 94 57 58
+          </p>
+          <p class="text-gray-800 mb-2">
+            <i class="fas fa-envelope mr-2"></i> info@fourseasonsinsurance.com
+          </p>
+          <div class="flex gap-4 mt-4">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="text-gray-800 hover:text-vertForet"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://www.whatsapp.com"
+              target="_blank"
+              class="text-gray-800 hover:text-vertForet"
+            >
+              <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-gray-800 mt-10">
+        &copy; 2024 Four Seasons Insurance. Tous droits réservés.
+      </div>
+    </footer>
+    <script>
+      let currentSlide = 0;
+      const intervalTime = 5000; // Temps entre les transitions (en millisecondes)
+
+      function showSlide(index) {
+        const slides = document.querySelectorAll(".carousel-item");
+        if (index >= slides.length) currentSlide = 0;
+        if (index < 0) currentSlide = slides.length - 1;
+        slides.forEach((slide, i) => {
+          slide.style.transform = `translateX(-${currentSlide * 100}%)`;
+        });
+      }
+
+      function nextSlide() {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide--;
+        showSlide(currentSlide);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlide(currentSlide);
+        setInterval(nextSlide, intervalTime); // Change de diapositive automatiquement
+      });
+    </script>
+  </body>
+</html>

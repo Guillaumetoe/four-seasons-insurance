@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Images/LOGO FSI-07.png" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Demander un Devis - Four Seasons Insurance</title>
+  </head>
+  <body>
+    <header>
+      <!-- Réutiliser le header existant -->
+      <div class="bg-gray-200 py-2">
+        <div
+          class="max-w-screen-lg mx-auto flex flex-col md:flex-row md:justify-between md:items-center px-4 md:px-0"
+        >
+          <div
+            class="text-couleur3 flex flex-col md:flex-row md:gap-5 items-center md:items-start"
+          >
+            <a href="" class="mb-2 md:mb-0">info@fourseasonsinsurance.com</a>
+            <span class="flex items-center">
+              <i class="fas fa-phone mr-2"></i>
+              <span>07 49 09 30 10 - 05 00 94 57 58</span>
+            </span>
+          </div>
+
+          <!-- reseaux sociaux -->
+          <div class="flex justify-center gap-4 mt-4 md:mt-0">
+            <a
+              href="https://www.facebook.com/profile.php?id=100091275175422"
+              target="_blank"
+              class="text-couleur3 hover:text-vertDeux"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://wa.me/message/AOZQLRXLGIUEI1"
+              target="_blank"
+              class="text-couleur3 hover:text-vertDeux"
+            >
+              <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu navigation -->
+      <nav class="bg-gray-100 py-2">
+        <div
+          class="max-w-screen-lg mx-auto px-4 md:px-0 flex items-center justify-between"
+        >
+          <div>
+            <a href="index.html">
+              <img
+                src="../Images/LOGO FSI-07.png"
+                alt="Logo Four Seasons Insurance"
+                class="w-28"
+              />
+            </a>
+          </div>
+          <div class="md:hidden">
+            <!-- Bouton du menu hamburger -->
+            <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex md:items-center">
+            <ul class="flex gap-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="a-propos.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Services.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Nos services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Contact.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <ul class="flex flex-col items-center mt-4">
+            <li>
+              <a
+                href="index.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="a-propos.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="Services.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Nos services</a
+              >
+            </li>
+            <li>
+              <a
+                href="Contact.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mx-auto px-4 py-8">
+        <h3 class="text-center uppercase text-[30px] font-bold py-5">
+          Formulaire devis assurance santé
+        </h3>
+        <form
+          action="https://formspree.io/f/xeojjweq"
+          method="POST"
+          class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4"
+        >
+          <div class="mb-6">
+            <label for="apporteur" class="block text-gray-700 font-bold mb-2"
+              >Apporteur :</label
+            >
+            <input
+              type="text"
+              id="apporteur"
+              name="apporteur"
+              placeholder="Nom de l'apporteur"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="contact" class="block text-gray-700 font-bold mb-2"
+              >Contact :</label
+            >
+            <input
+              type="text"
+              id="contact"
+              name="contact"
+              placeholder="Contact de l'apporteur"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="souscripteur" class="block text-gray-700 font-bold mb-2"
+              >Souscripteur :</label
+            >
+            <input
+              type="text"
+              id="souscripteur"
+              name="souscripteur"
+              placeholder="Nom du souscripteur"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="activite" class="block text-gray-700 font-bold mb-2"
+              >Activité :</label
+            >
+            <input
+              type="text"
+              id="activite"
+              name="activite"
+              placeholder="Activité professionnelle"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="commune" class="block text-gray-700 font-bold mb-2"
+              >Commune :</label
+            >
+            <input
+              type="text"
+              id="commune"
+              name="commune"
+              placeholder="Commune de résidence"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block text-gray-700 font-bold mb-2"
+              >E-mail :</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Adresse e-mail"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="contacts" class="block text-gray-700 font-bold mb-2"
+              >Contacts :</label
+            >
+            <input
+              type="text"
+              id="contacts"
+              name="contacts"
+              placeholder="Numéro de téléphone"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="formule" class="block text-gray-700 font-bold mb-2"
+              >Formule choisie :</label
+            >
+            <input
+              type="text"
+              id="formule"
+              name="formule"
+              placeholder="Formule choisie"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="option" class="block text-gray-700 font-bold mb-2"
+              >Option :</label
+            >
+            <input
+              type="text"
+              id="option"
+              name="option"
+              placeholder="Option (Monde Entier)"
+              class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <hr class="mb-6" />
+          <h2 class="text-2xl font-bold mb-4">
+            Informations sur l'Assuré Principal
+          </h2>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label for="nom" class="block text-gray-700 font-bold mb-2"
+                >Nom :</label
+              >
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Nom"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label for="prenoms" class="block text-gray-700 font-bold mb-2"
+                >Prénoms :</label
+              >
+              <input
+                type="text"
+                id="prenoms"
+                name="prenoms"
+                placeholder="Prénoms"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label for="residence" class="block text-gray-700 font-bold mb-2"
+                >Lieu de résidence :</label
+              >
+              <input
+                type="text"
+                id="residence"
+                name="residence"
+                placeholder="Lieu de résidence"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label for="profession" class="block text-gray-700 font-bold mb-2"
+                >Profession :</label
+              >
+              <input
+                type="text"
+                id="profession"
+                name="profession"
+                placeholder="Profession"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label for="cmu" class="block text-gray-700 font-bold mb-2"
+                >N° CMU :</label
+              >
+              <input
+                type="text"
+                id="cmu"
+                name="cmu"
+                placeholder="N° CMU"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label for="naissance" class="block text-gray-700 font-bold mb-2"
+                >Date de naissance :</label
+              >
+              <input
+                type="text"
+                id="naissance"
+                name="naissance"
+                placeholder="Date de naissance"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <hr class="mb-6" />
+          <h2 class="text-2xl font-bold mb-4">Informations sur le Conjoint</h2>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="nom_conjoint"
+                class="block text-gray-700 font-bold mb-2"
+                >Nom :</label
+              >
+              <input
+                type="text"
+                id="nom_conjoint"
+                name="nom_conjoint"
+                placeholder="Nom du conjoint"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="prenoms_conjoint"
+                class="block text-gray-700 font-bold mb-2"
+                >Prénoms :</label
+              >
+              <input
+                type="text"
+                id="prenoms_conjoint"
+                name="prenoms_conjoint"
+                placeholder="Prénoms du conjoint"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="residence_conjoint"
+                class="block text-gray-700 font-bold mb-2"
+                >Lieu de résidence :</label
+              >
+              <input
+                type="text"
+                id="residence_conjoint"
+                name="residence_conjoint"
+                placeholder="Lieu de résidence du conjoint"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="profession_conjoint"
+                class="block text-gray-700 font-bold mb-2"
+                >Profession :</label
+              >
+              <input
+                type="text"
+                id="profession_conjoint"
+                name="profession_conjoint"
+                placeholder="Profession du conjoint"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="cmu_conjoint"
+                class="block text-gray-700 font-bold mb-2"
+                >N° CMU :</label
+              >
+              <input
+                type="text"
+                id="cmu_conjoint"
+                name="cmu_conjoint"
+                placeholder="N° CMU du conjoint"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="naissance_conjoint"
+                class="block text-gray-700 font-bold mb-2"
+                >Date de naissance :</label
+              >
+              <input
+                type="text"
+                id="naissance_conjoint"
+                name="naissance_conjoint"
+                placeholder="Date de naissance du conjoint"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <hr class="mb-6" />
+          <h2 class="text-2xl font-bold mb-4">Informations sur les Enfants</h2>
+          <!-- Enfant 1 -->
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="nom_enfant1"
+                class="block text-gray-700 font-bold mb-2"
+                >Nom enfant 1 :</label
+              >
+              <input
+                type="text"
+                id="nom_enfant1"
+                name="nom_enfant1"
+                placeholder="Nom de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="prenoms_enfant1"
+                class="block text-gray-700 font-bold mb-2"
+                >Prénoms enfant 1 :</label
+              >
+              <input
+                type="text"
+                id="prenoms_enfant1"
+                name="prenoms_enfant1"
+                placeholder="Prénoms de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="residence_enfant1"
+                class="block text-gray-700 font-bold mb-2"
+                >Lieu de résidence :</label
+              >
+              <input
+                type="text"
+                id="residence_enfant1"
+                name="residence_enfant1"
+                placeholder="Lieu de résidence de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="profession_enfant1"
+                class="block text-gray-700 font-bold mb-2"
+                >Profession :</label
+              >
+              <input
+                type="text"
+                id="profession_enfant1"
+                name="profession_enfant1"
+                placeholder="Profession de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="cmu_enfant1"
+                class="block text-gray-700 font-bold mb-2"
+                >N° CMU :</label
+              >
+              <input
+                type="text"
+                id="cmu_enfant1"
+                name="cmu_enfant1"
+                placeholder="N° CMU de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="naissance_enfant1"
+                class="block text-gray-700 font-bold mb-2"
+                >Date de naissance :</label
+              >
+              <input
+                type="text"
+                id="naissance_enfant1"
+                name="naissance_enfant1"
+                placeholder="Date de naissance de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <!-- Enfant 2 -->
+          <hr class="my-8 border-t-2 border-gray-300" />
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="nom_enfant2"
+                class="block text-gray-700 font-bold mb-2"
+                >Nom enfant 2 :</label
+              >
+              <input
+                type="text"
+                id="nom_enfant2"
+                name="nom_enfant2"
+                placeholder="Nom de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="prenoms_enfant2"
+                class="block text-gray-700 font-bold mb-2"
+                >Prénoms enfant 2 :</label
+              >
+              <input
+                type="text"
+                id="prenoms_enfant2"
+                name="prenoms_enfant2"
+                placeholder="Prénoms de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="residence_enfant2"
+                class="block text-gray-700 font-bold mb-2"
+                >Lieu de résidence :</label
+              >
+              <input
+                type="text"
+                id="residence_enfant2"
+                name="residence_enfant2"
+                placeholder="Lieu de résidence de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="profession_enfant2"
+                class="block text-gray-700 font-bold mb-2"
+                >Profession :</label
+              >
+              <input
+                type="text"
+                id="profession_enfant2"
+                name="profession_enfant2"
+                placeholder="Profession de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="cmu_enfant2"
+                class="block text-gray-700 font-bold mb-2"
+                >N° CMU :</label
+              >
+              <input
+                type="text"
+                id="cmu_enfant2"
+                name="cmu_enfant2"
+                placeholder="N° CMU de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="naissance_enfant2"
+                class="block text-gray-700 font-bold mb-2"
+                >Date de naissance :</label
+              >
+              <input
+                type="text"
+                id="naissance_enfant2"
+                name="naissance_enfant2"
+                placeholder="Date de naissance de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <!-- Enfant 3 -->
+          <hr class="my-8 border-t-2 border-gray-300" />
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="nom_enfant3"
+                class="block text-gray-700 font-bold mb-2"
+                >Nom enfant 3 :</label
+              >
+              <input
+                type="text"
+                id="nom_enfant3"
+                name="nom_enfant3"
+                placeholder="Nom de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="prenoms_enfant3"
+                class="block text-gray-700 font-bold mb-2"
+                >Prénoms enfant 3 :</label
+              >
+              <input
+                type="text"
+                id="prenoms_enfant3"
+                name="prenoms_enfant3"
+                placeholder="Prénoms de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="residence_enfant3"
+                class="block text-gray-700 font-bold mb-2"
+                >Lieu de résidence :</label
+              >
+              <input
+                type="text"
+                id="residence_enfant3"
+                name="residence_enfant3"
+                placeholder="Lieu de résidence de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="profession_enfant3"
+                class="block text-gray-700 font-bold mb-2"
+                >Profession :</label
+              >
+              <input
+                type="text"
+                id="profession_enfant3"
+                name="profession_enfant3"
+                placeholder="Profession de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="cmu_enfant3"
+                class="block text-gray-700 font-bold mb-2"
+                >N° CMU :</label
+              >
+              <input
+                type="text"
+                id="cmu_enfant3"
+                name="cmu_enfant3"
+                placeholder="N° CMU de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="naissance_enfant3"
+                class="block text-gray-700 font-bold mb-2"
+                >Date de naissance :</label
+              >
+              <input
+                type="text"
+                id="naissance_enfant3"
+                name="naissance_enfant3"
+                placeholder="Date de naissance de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <!-- Enfant 4 -->
+          <hr class="my-8 border-t-2 border-gray-300" />
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="nom_enfant4"
+                class="block text-gray-700 font-bold mb-2"
+                >Nom enfant 4:</label
+              >
+              <input
+                type="text"
+                id="nom_enfant4"
+                name="nom_enfant4"
+                placeholder="Nom de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="prenoms_enfant4"
+                class="block text-gray-700 font-bold mb-2"
+                >Prénoms enfant 4 :</label
+              >
+              <input
+                type="text"
+                id="prenoms_enfant4"
+                name="prenoms_enfant4"
+                placeholder="Prénoms de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="residence_enfant4"
+                class="block text-gray-700 font-bold mb-2"
+                >Lieu de résidence :</label
+              >
+              <input
+                type="text"
+                id="residence_enfant4"
+                name="residence_enfant4"
+                placeholder="Lieu de résidence de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="profession_enfant4"
+                class="block text-gray-700 font-bold mb-2"
+                >Profession :</label
+              >
+              <input
+                type="text"
+                id="profession_enfant4"
+                name="profession_enfant4"
+                placeholder="Profession de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="cmu_enfant4"
+                class="block text-gray-700 font-bold mb-2"
+                >N° CMU :</label
+              >
+              <input
+                type="text"
+                id="cmu_enfant4"
+                name="cmu_enfant4"
+                placeholder="N° CMU de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="naissance_enfant4"
+                class="block text-gray-700 font-bold mb-2"
+                >Date de naissance :</label
+              >
+              <input
+                type="text"
+                id="naissance_enfant4"
+                name="naissance_enfant4"
+                placeholder="Date de naissance de l'enfant"
+                class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-between mt-8">
+            <button
+              type="submit"
+              class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Soumettre
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- reutilisation footer -->
+    <footer class="bg-gray-200 text-couleur3 py-10">
+      <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- À propos -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">À propos de nous</h4>
+          <p class="text-gray-800">
+            Four Seasons Insurance est une entreprise de courtage en assurance
+            dédiée à offrir des solutions personnalisées pour protéger vos
+            biens, votre santé, et vos projets professionnels.
+          </p>
+          <img
+            src="../Images/LOGO FSI-07.png"
+            alt="Logo Four Seasons Insurance"
+            class="w-32 mt-4"
+          />
+        </div>
+        <!-- Liens rapides -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Liens rapides</h4>
+          <ul class="text-gray-800">
+            <li class="mb-2">
+              <a href="index.html" class="hover:text-vertForet font-semibold"
+                >Accueil</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="a-propos.html" class="hover:text-vertForet font-semibold"
+                >À propos</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="Services.html" class="hover:text-vertForet font-semibold"
+                >Nos services</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="Contact.html" class="hover:text-vertForet font-semibold"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact</h4>
+          <p class="text-gray-800 mb-2">
+            <i class="fas fa-phone mr-2"></i> 07 49 09 30 10 - 05 00 94 57 58
+          </p>
+          <p class="text-gray-800 mb-2">
+            <i class="fas fa-envelope mr-2"></i> info@fourseasonsinsurance.com
+          </p>
+          <div class="flex gap-4 mt-4">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="text-gray-800 hover:text-vertForet"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://www.whatsapp.com"
+              target="_blank"
+              class="text-gray-800 hover:text-vertForet"
+            >
+              <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-gray-800 mt-10">
+        &copy; 2024 Four Seasons Insurance. Tous droits réservés.
+      </div>
+    </footer>
+  </body>
+</html>

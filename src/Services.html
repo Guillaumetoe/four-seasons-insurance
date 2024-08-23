@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Images/LOGO FSI-07.png" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Nos services</title>
+  </head>
+  <body>
+    <header>
+      <!-- Réutiliser le header existant -->
+      <div class="bg-gray-200 py-2">
+        <div
+          class="max-w-screen-lg mx-auto flex flex-col md:flex-row md:justify-between md:items-center px-4 md:px-0"
+        >
+          <div
+            class="text-couleur3 flex flex-col md:flex-row md:gap-5 items-center md:items-start"
+          >
+            <a href="" class="mb-2 md:mb-0">info@fourseasonsinsurance.com</a>
+            <span class="flex items-center">
+              <i class="fas fa-phone mr-2"></i>
+              <span>07 49 09 30 10 - 05 00 94 57 58</span>
+            </span>
+          </div>
+
+          <!-- reseaux sociaux -->
+          <div class="flex justify-center gap-4 mt-4 md:mt-0">
+            <a
+              href="https://www.facebook.com/profile.php?id=100091275175422"
+              target="_blank"
+              class="text-couleur3 hover:text-vertDeux"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://wa.me/message/AOZQLRXLGIUEI1"
+              target="_blank"
+              class="text-couleur3 hover:text-vertDeux"
+            >
+              <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu navigation -->
+      <nav class="bg-gray-100 py-2">
+        <div
+          class="max-w-screen-lg mx-auto px-4 md:px-0 flex items-center justify-between"
+        >
+          <div>
+            <a href="index.html">
+              <img
+                src="../Images/LOGO FSI-07.png"
+                alt="Logo Four Seasons Insurance"
+                class="w-28"
+              />
+            </a>
+          </div>
+          <div class="md:hidden">
+            <!-- Bouton du menu hamburger -->
+            <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex md:items-center">
+            <ul class="flex gap-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="a-propos.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Services.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Nos services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Contact.html"
+                  class="text-couleur3 hover:text-vertDeux font-bold transition duration-500 ease-in-out"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <ul class="flex flex-col items-center mt-4">
+            <li>
+              <a
+                href="index.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="a-propos.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="Services.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Nos services</a
+              >
+            </li>
+            <li>
+              <a
+                href="Contact.html"
+                class="block text-center py-2 hover:bg-gray-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="assurance-auto-moto" class="py-10 bg-white">
+        <h2
+          class="uppercase text-white font-bold text-center py-6 px-6 rounded-[15px] text-4xl bg-green-700 w-fit mx-auto"
+        >
+          Découvrez toutes nos solutions en assurance
+        </h2>
+        <div
+          class="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center py-6 px-4 md:px-0"
+        >
+          <div class="w-full md:w-1/2 mb-6 md:mb-0">
+            <img
+              src="../Images/ASSURANCE-AUTO.jpg"
+              alt="Assurance Automobile et Moto"
+              class="max-w-full"
+            />
+          </div>
+          <div class="w-full md:w-1/2 md:pl-8">
+            <h2 class="text-3xl font-semibold mb-4 text-couleur3">
+              Assurance Automobile et Moto
+            </h2>
+            <p class="text-gray-800 mb-4 text-justify">
+              L'assurance automobile et moto est un service crucial pour tout
+              propriétaire de véhicule motorisé. Elle offre une protection
+              financière contre les dommages ou pertes liés aux accidents, vols,
+              incendies, et autres incidents impliquant votre véhicule. En Côte
+              d'Ivoire, cette assurance est non seulement une nécessité légale
+              mais également une mesure de sécurité indispensable pour tous les
+              conducteurs.
+            </p>
+            <ul class="mb-4">
+              <li class="mb-2">
+                Avantages:
+                <ul class="list-disc ml-6">
+                  <li>Couverture complète en cas d'accident</li>
+                  <li>Assistance routière 24/7</li>
+                  <li>Tarifs compétitifs</li>
+                </ul>
+              </li>
+            </ul>
+            <p class="text-gray-800 mb-4">Étapes pour souscrire:</p>
+            <ol class="list-decimal ml-6 mb-4">
+              <li>Contactez-nous au 07 49 09 30 10</li>
+              <li>Remplissez le formulaire en ligne</li>
+              <li>Recevez votre devis personnalisé</li>
+            </ol>
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold mb-4 text-couleur3 text-center py-5">
+          Nos Formules
+        </h3>
+        <div class="max-w-screen-lg mx-auto">
+          <table
+            class="w-full text-left border-collapse mb-4 bg-white shadow-md"
+          >
+            <thead>
+              <tr class="bg-couleur3 text-white">
+                <th class="border-b-2 p-2">Formule</th>
+                <th class="border-b-2 p-2">Couverture</th>
+                <th class="border-b-2 p-2">Âge du véhicule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="border-b p-2">Tiers Simple</td>
+                <td class="border-b p-2">
+                  Responsabilité civile, Défense & recours, Individuel
+                  Conducteur, Assistance auto
+                </td>
+                <td class="border-b p-2">Tout âge</td>
+              </tr>
+              <tr class="bg-violet-200">
+                <td class="border-b p-2">Tiers Amélioré</td>
+                <td class="border-b p-2">
+                  Responsabilité civile, Défense & recours, Vol, Individuel
+                  Conducteur, Assistance auto, Incendie, Avance sur recours,
+                  Bris de glaces
+                </td>
+                <td class="border-b p-2">Tout âge</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border-b p-2">Tierce Collision</td>
+                <td class="border-b p-2">
+                  Responsabilité civile, Défense & recours, Vol, Individuel
+                  Conducteur, Assistance auto, Incendie, Avance sur recours,
+                  Bris de glaces, Tierce collision
+                </td>
+                <td class="border-b p-2">0 à 5 ans inclus</td>
+              </tr>
+              <tr class="bg-violet-200">
+                <td class="border-b p-2">Tierce Complète</td>
+                <td class="border-b p-2">
+                  Responsabilité civile, Défense & recours, Vol, Individuel
+                  Conducteur, Assistance auto, Incendie, Avance sur recours,
+                  Bris de glaces, Tierce complète
+                </td>
+                <td class="border-b p-2">0 à 4 ans inclus</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="assurance-sante" class="py-10 bg-gray-100">
+        <div
+          class="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center px-4 md:px-0"
+        >
+          <div class="w-full md:w-1/2 mb-6 md:mb-0">
+            <img
+              src="../Images/SANTE.jpg"
+              alt="Assurance Automobile et Moto"
+              class="max-w-full"
+            />
+          </div>
+          <div class="w-full md:w-1/2 md:pl-8">
+            <h2 class="text-3xl font-semibold mb-4 text-couleur3">
+              Assurance Santé
+            </h2>
+            <p class="text-gray-800 mb-4 text-justify">
+              Nous prenons soin de votre santé, que vous soyez salarié,
+              travailleur indépendant, ou exerçant une profession libérale.
+              Votre santé et celle de vos proches sont primordiales. Pour
+              garantir une prise en charge optimale de vos dépenses de santé,
+              nous proposons des offres d’assurance maladie à des tarifs très
+              compétitifs. Choisissez parmi nos formules pour couvrir au mieux
+              tous vos besoins.
+            </p>
+            <ul class="mb-4 text-justify">
+              <li class="mb-2">
+                Avantages assurance santé :
+                <ul class="list-disc ml-6">
+                  <li>
+                    <span class="font-semibold">Couverture complète</span>: Les
+                    formules d'assurance santé de Your Seasons Insurance offrent
+                    une protection étendue pour répondre aux besoins de chaque
+                    membre de la famille.
+                  </li>
+                  <li>
+                    <span class="font-semibold">Accessibilité</span>: Des
+                    options abordables adaptées à différents budgets, avec des
+                    couvertures allant jusqu'à 100% des frais médicaux.
+                  </li>
+                  <li>
+                    <span class="font-semibold">Flexibilité</span>: Des formules
+                    adaptées à diverses situations familiales, incluant les
+                    célibataires et les familles jusqu'à quatre enfants.
+                  </li>
+                  <li>
+                    <span class="font-semibold">Réseau de soins</span>: Accès au
+                    réseau de soins Novelia Assurance pour des prestations de
+                    qualité.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>Étapes pour souscrire :</p>
+            <ol class="list-decimal ml-6 mb-4">
+              <li>Contactez-nous au 07 49 09 30 10</li>
+              <li>Remplissez le formulaire en ligne</li>
+              <li>Recevez votre devis personnalisé</li>
+            </ol>
+          </div>
+        </div>
+        <div
+          class="max-w-screen-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-8"
+        >
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Nos Formules d'Assurance Santé
+          </h2>
+          <table class="w-full table-auto border-collapse">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="border px-4 py-2 text-left">Formule</th>
+                <th class="border px-4 py-2 text-left">Solo</th>
+                <th class="border px-4 py-2 text-left">Famille</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2">
+                  CLASSIC - taux de couverture: 80% en Côte d'ivoire
+                </td>
+                <td class="border px-4 py-2">125 000 F/an</td>
+                <td class="border px-4 py-2">360 000 F/an</td>
+              </tr>
+              <tr class="bg-gray-100">
+                <td class="border px-4 py-2">
+                  AISANCE - taux de couverture: 80% en Côte d'ivoire
+                </td>
+                <td class="border px-4 py-2">235 000 F/an</td>
+                <td class="border px-4 py-2">690 000 F/an</td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2">
+                  HARMONY - taux de couverture: 80% en Côte d'ivoire
+                </td>
+                <td class="border px-4 py-2">445 000 F/an</td>
+                <td class="border px-4 py-2">1 010 000 F/an</td>
+              </tr>
+              <tr class="bg-gray-100">
+                <td class="border px-4 py-2">
+                  PREMIUM - taux de couverture: 100% en Côte d'ivoire et monde
+                  entier
+                </td>
+                <td class="border px-4 py-2">620 000 F/an</td>
+                <td class="border px-4 py-2">1 370 000 F/an</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mt-4 text-gray-600">
+            NB : Famille - M et/ou Mme avec 4 enfants.
+          </p>
+        </div>
+      </section>
+
+      <section id="assurance-voyage" class="py-10 bg-white">
+        <div
+          class="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center px-4 md:px-0"
+        >
+          <div class="w-full md:w-1/2 mb-6 md:mb-0">
+            <img
+              src="../Images/FSI-ASSURANEC-VOYAGE.webp"
+              alt="Assurance Voyage"
+              class="max-w-full"
+            />
+          </div>
+          <div class="w-full md:w-1/2 md:pl-8">
+            <h2 class="text-3xl font-semibold mb-4 text-couleur3">
+              Assurance Voyage
+            </h2>
+            <p class="text-gray-800 mb-4 text-justify">
+              L'assurance voyage est un service essentiel pour les voyageurs qui
+              offre une protection financière et une assistance en cas d'imprévu
+              pendant un voyage à l'étranger ou même domestique.
+            </p>
+            <ul class="mb-4 text-justify">
+              <li class="mb-2">
+                Avantages :
+                <ul class="list-disc ml-6">
+                  <li>Couverture Médicale d'Urgence</li>
+                  <li>Assistance en Cas d'Urgence</li>
+                  <li>Protection des Bagages</li>
+                  <li>Annulation et Interruption de Voyage</li>
+                  <li>Assurance Responsabilité Civile</li>
+                  <li>Assurance de Départ Manqué</li>
+                </ul>
+              </li>
+            </ul>
+            <p>Étapes pour souscrire :</p>
+            <ol class="list-decimal ml-6 mb-4">
+              <li>Contactez-nous au 07 49 09 30 10</li>
+              <li>Remplissez le formulaire en ligne</li>
+              <li>Recevez votre devis personnalisé</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="assurance-habitation" class="py-10 bg-gray-100">
+        <div
+          class="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center px-4 md:px-0"
+        >
+          <div class="w-full md:w-1/2 mb-6 md:mb-0">
+            <img
+              src="../Images/HABITATION.jpg"
+              alt="Assurance habitation"
+              class="max-w-full"
+            />
+          </div>
+          <div class="w-full md:w-1/2 md:pl-8">
+            <h2 class="text-3xl font-semibold mb-4 text-couleur3">
+              Assurance Habitation
+            </h2>
+            <p class="text-gray-800 mb-4 text-justify">
+              Protégez votre domicile et vos biens avec notre assurance
+              habitation complète. Nous vous offrons une couverture contre les
+              risques majeurs tels que incendies, dégâts des eaux, vols, et plus
+              encore.
+            </p>
+            <ul class="mb-4 text-justify">
+              <li class="mb-2">
+                Avantages :
+                <ul class="list-disc ml-6">
+                  <li>
+                    Couverture complète des biens et responsabilités civiles
+                  </li>
+                  <li>Assistance dépannage 24/7</li>
+                  <li>Option pour protéger les biens de valeurs</li>
+                </ul>
+              </li>
+            </ul>
+            <p>Étapes pour souscrire :</p>
+            <ol class="list-decimal ml-6 mb-4">
+              <li>Contactez-nous au 07 49 09 30 10</li>
+              <li>Remplissez le formulaire en ligne</li>
+              <li>Recevez votre devis personnalisé</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 text-couleur3 py-10">
+      <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- À propos -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">À propos de nous</h4>
+          <p class="text-gray-800">
+            Four Seasons Insurance est une entreprise de courtage en assurance
+            dédiée à offrir des solutions personnalisées pour protéger vos
+            biens, votre santé, et vos projets professionnels.
+          </p>
+          <img
+            src="../Images/LOGO FSI-07.png"
+            alt="Logo Four Seasons Insurance"
+            class="w-32 mt-4"
+          />
+        </div>
+        <!-- Liens rapides -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Liens rapides</h4>
+          <ul class="text-gray-800">
+            <li class="mb-2">
+              <a href="#Accueil" class="hover:text-vertForet font-semibold"
+                >Accueil</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="a-propos.html" class="hover:text-vertForet font-semibold"
+                >À propos</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="Services.html" class="hover:text-vertForet font-semibold"
+                >Nos services</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="Contact.html" class="hover:text-vertForet font-semibold"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact</h4>
+          <p class="text-gray-800 mb-2">
+            <i class="fas fa-phone mr-2"></i> 07 49 09 30 10 - 05 00 94 57 58
+          </p>
+          <p class="text-gray-800 mb-2">
+            <i class="fas fa-envelope mr-2"></i> info@fourseasonsinsurance.com
+          </p>
+          <div class="flex gap-4 mt-4">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="text-gray-800 hover:text-vertForet"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://www.whatsapp.com"
+              target="_blank"
+              class="text-gray-800 hover:text-vertForet"
+            >
+              <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-gray-800 mt-10">
+        &copy; 2024 Four Seasons Insurance. Tous droits réservés.
+      </div>
+    </footer>
+  </body>
+</html>
